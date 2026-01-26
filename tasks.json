@@ -1,0 +1,106 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "The Sine Wave",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Write a single prompt to generate a 10Hz sine wave plot.",
+      "challenge": "Ensure the sampling frequency is at least 1000Hz and the plot has professional labels."
+    },
+    {
+      "id": 2,
+      "title": "The Data Cleaner",
+      "asset": "RECORD_ID: 001 | USER: \"Alice\" | SCORE: 88%\nRECORD_ID: 002 | USER: \"Bob\"   | SCORE: 92%\nRECORD_ID: 003 | USER: \"Charlie\" | SCORE: 75%",
+      "asset_text": "RECORD_ID: 001 | USER: \"Alice\" | SCORE: 88%\nRECORD_ID: 002 | USER: \"Bob\"   | SCORE: 92%\nRECORD_ID: 003 | USER: \"Charlie\" | SCORE: 75%",
+      "asset_filename": "data.txt",
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Convert this unstructured text into a MATLAB `table` or a Python `pandas.DataFrame`.",
+      "challenge": "The \"Score\" column must be converted to numeric values (e.g., 0.88) instead of strings."
+    },
+    {
+      "id": 3,
+      "title": "The Unit Converter",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Create a function called `convert_temp`.",
+      "challenge": "It must accept Celsius and return a data structure (Struct in MATLAB, Dict in Python) containing Kelvin and Fahrenheit."
+    },
+    {
+      "id": 4,
+      "title": "The Regex Rescue",
+      "asset": "Processing file_v1_20230501.dat. \nBackup created at file_v2_20231225.dat.\nLast modified on 20240115.",
+      "asset_text": "Processing file_v1_20230501.dat. \nBackup created at file_v2_20231225.dat.\nLast modified on 20240115.",
+      "asset_filename": "log.txt",
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Extract only the dates (YYYYMMDD) using Regular Expressions.",
+      "challenge": "Format the output as a list of strings."
+    },
+    {
+      "id": 5,
+      "title": "Matrix Solver",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Represent these as matrices A and B, then solve for x.",
+      "challenge": "Solve it using the most computationally efficient built-in function for your language. Use A = [[1, 1], [1, -1]] and B = [5, -1]. Expected result: [2, 3]."
+    },
+    {
+      "id": 6,
+      "title": "Plot Styling",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": "plt.plot([1, 2, 3], [1, 4, 9])",
+      "asset_code_matlab": "plot([1, 2, 3], [1, 4, 9])",
+      "goal": "Make this plot \"Publication Quality.\"",
+      "challenge": "Use a specific font (e.g., Times New Roman), add a legend, and use a LaTeX string for the title: $\\int e^x dx$."
+    },
+    {
+      "id": 7,
+      "title": "The Logic Debugger",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": "# Python\ndef get_average(nums):\n    return sum(nums) / len(nums)\nprint(get_average([]))",
+      "asset_code_matlab": "% MATLAB\ndata = [10, 20, 30];\nfor i = 1:4\n    disp(data(i))\nend",
+      "goal": "Ask the AI to fix the code to handle the specific error (Empty list or Index out of bounds).",
+      "challenge": "Python: function 'get_average'. MATLAB: variable 'data'."
+    },
+    {
+      "id": 8,
+      "title": "Mock Data Generation",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": null,
+      "goal": "Generate a JSON-formatted string for 5 test users.",
+      "challenge": "Each user must have a unique `ID`, a `timestamp` for \"last_login,\" and a random `float` between 0 and 1 for \"reliability_score.\""
+    },
+    {
+      "id": 9,
+      "title": "Vectorization",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": "% MATLAB\nA = 1:10000;\nfor i = 1:length(A)\n    B(i) = A(i)^2;\nend",
+      "goal": "Rewrite this code to remove the `for` loop.",
+      "challenge": "In Python, use NumPy; in MATLAB, use array operators."
+    },
+    {
+      "id": 10,
+      "title": "Language Translation",
+      "asset": null,
+      "asset_text": null,
+      "asset_code_python": null,
+      "asset_code_matlab": "theta = linspace(0, 2*pi, 100);\nrho = abs(sin(2*theta) .* cos(2*theta));\npolarplot(theta, rho)",
+      "goal": "Translate this MATLAB code into Python.",
+      "challenge": "The Python version must use `matplotlib`'s polar projection and look identical to the MATLAB output."
+    }
+  ]
+}
